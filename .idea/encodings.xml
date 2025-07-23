@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/pulse-engine-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pulse-engine-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pulse-engine-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pulse-engine-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pulse-engine-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pulse-engine-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pulse-engine-infra/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pulse-engine-infra/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pulse-engine-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pulse-engine-test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
