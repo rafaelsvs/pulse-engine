@@ -3,7 +3,7 @@ package com.pulse.service.impl;
 import com.pulse.dto.IncentiveOfferRequest;
 import com.pulse.dto.IncentiveOfferResponse;
 import com.pulse.entity.IncentiveOfferEntity;
-import com.pulse.service.IncentiveOfferRepository;
+import com.pulse.repository.IncentiveOfferRepository;
 import com.pulse.service.IncentiveService;
 import org.springframework.stereotype.Service;
 

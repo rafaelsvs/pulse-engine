@@ -1,4 +1,4 @@
-package com.pulse.service;
+package com.pulse.repository;
 import com.pulse.entity.IncentiveOfferEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
