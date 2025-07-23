@@ -37,6 +37,13 @@
             <version>3.1.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version> <!-- ou a versão mais recente -->
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
 </project>

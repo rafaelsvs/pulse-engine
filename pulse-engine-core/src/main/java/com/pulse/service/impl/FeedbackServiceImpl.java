@@ -9,7 +9,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import java.util.List;
-
 import java.time.Instant;
 
 @Service
@@ -52,7 +51,14 @@ public class FeedbackServiceImpl implements FeedbackService {
     }
 
     @Override
-    public List<FeedbackEventEntity> listAll() {
-        return repository.findAll();
+    public List<Feedback> listAll() {
+        return repository.findAll().stream()
+                .map(entity -> new Feedback(
+                        entity.getOfferId(),
+                        entity.getAgentId(),
+                        entity.getStatus(),
+                        entity.getTimestamp()
+                ))
+                .toList();
     }
 }

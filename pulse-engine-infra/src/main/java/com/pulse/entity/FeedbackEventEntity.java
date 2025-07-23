@@ -1,10 +1,15 @@
 package com.pulse.entity;
 
 import jakarta.persistence.*;
+import lombok.*;
+
 import java.time.Instant;
 
 @Entity
 @Table(name = "feedback_events")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class FeedbackEventEntity {
 
     @Id
@@ -16,14 +21,11 @@ public class FeedbackEventEntity {
     private String status;
     private Instant timestamp;
 
-    public FeedbackEventEntity() {}
-
+    // Construtor manual adicional (sem id)
     public FeedbackEventEntity(String offerId, String agentId, String status, Instant timestamp) {
         this.offerId = offerId;
         this.agentId = agentId;
         this.status = status;
         this.timestamp = timestamp;
     }
-
-    // Getters e setters omitidos por simplicidade
 }
