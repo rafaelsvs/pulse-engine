@@ -8,6 +8,7 @@ import com.pulse.service.FeedbackService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import java.util.List;
 
 import java.time.Instant;
 
@@ -48,5 +49,10 @@ public class FeedbackServiceImpl implements FeedbackService {
         repository.save(entity);
 
         log.debug("Evento persistido com sucesso: {}", entity);
+    }
+
+    @Override
+    public List<FeedbackEventEntity> listAll() {
+        return repository.findAll();
     }
 }

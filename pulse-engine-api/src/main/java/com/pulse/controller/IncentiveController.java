@@ -7,6 +7,8 @@ import com.pulse.service.IncentiveService;
 import com.pulse.service.FeedbackService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.pulse.entity.FeedbackEventEntity;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/incentives")
@@ -29,5 +31,10 @@ public class IncentiveController {
     public ResponseEntity<Void> registerFeedback(@RequestBody IncentiveFeedbackRequest request) {
         feedbackService.registerFeedback(request);
         return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("/feedbacks")
+    public ResponseEntity<List<FeedbackEventEntity>> getAllFeedbacks() {
+        return ResponseEntity.ok(feedbackService.listAll());
     }
 }
