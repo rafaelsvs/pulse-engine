@@ -1,7 +1,10 @@
 package com.pulse.dto;
+import java.time.Instant;
 
 public record IncentiveOfferResponse(
-        double basePrice,
-        double incentive,
-        String strategyUsed
+        String offerId,
+        String agentId,
+        String region,
+        double amount,
+        Instant timestamp
 ) {}

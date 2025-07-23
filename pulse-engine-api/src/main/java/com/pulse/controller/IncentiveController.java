@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.pulse.model.Feedback;
 import java.util.List;
+import com.pulse.entity.IncentiveOfferEntity;
 
 @RestController
 @RequestMapping("/api/incentives")
@@ -36,5 +37,10 @@ public class IncentiveController {
     @GetMapping("/feedbacks")
     public ResponseEntity<List<Feedback>> getAllFeedbacks() {
         return ResponseEntity.ok(feedbackService.listAll());
+    }
+
+    @GetMapping("/offers")
+    public ResponseEntity<List<IncentiveOfferResponse>> getAllOffers() {
+        return ResponseEntity.ok(incentiveService.listAll());
     }
 }
